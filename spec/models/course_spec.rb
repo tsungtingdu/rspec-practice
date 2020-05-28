@@ -8,4 +8,9 @@ RSpec.describe Course, type: :model do
       expect(columns).to include 'description'
     end
   end
+
+  it { is_expected.to validate_presence_of(:title)}
+  # it 'xxx' do
+  #   expect(subject).to validate_presence_of(:title)
+  # end
 end
